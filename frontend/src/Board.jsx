@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('https://turbo-space-meme-9756g6r4rqrrc79gj-3001.app.github.dev/'); 
+const socket = io('https://turbo-space-meme-9756g6r4rqrrc79gj-3001.app.github.dev'); 
 const ROOM_ID = 'design_room_1'; 
 
 const Board = () => {
