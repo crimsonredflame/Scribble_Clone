@@ -3,8 +3,7 @@ import Board from './Board.jsx'
 
 function App() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
-      <h1>Scribble Clone</h1>
+    <div style={{ margin: 0, padding: 0, width: '100vw', height: '100vh', overflow: 'hidden' }}>
       <Board />
     </div>
   )
