@@ -9,7 +9,7 @@ const io = new Server(server, {
   cors: { origin: '*' }
 });
 
-const redisClient = redis.createClient({ url: 'redis://localhost:6379' });
+const redisClient = redis.createClient({ url: process.env.REDIS_URL || 'redis://localhost:6379' });
 redisClient.connect().catch(console.error);
 
 io.on('connection', (socket) => {
